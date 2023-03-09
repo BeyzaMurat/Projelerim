@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Sözleşme Onay</legend>
+        <input type="checkbox" id="onay" name="onay" value="1" required>
+        <label for="onay">Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi onaylıyorum</label><br>
+    <br>
+    <input type="submit" id="btnK" name="btnK" value="Formu Kaydet">
+    <input type="reset" id="btnT" name="btnT" value="Formu Temizle">
+</fieldset>
+<fieldset>
+    <legend>Kullanıcı Bilgileri</legend>
+    Form Güvenlik ID:
+    <input type="text" id="guvenlik" name="guvenlik" value="asdfg" disabled>
+    <input type="hidden" id="guvenlik1" name="guvenlik1" value="asdfg">
+    <br><br>
+    Ad:
+    <input type="text" id="ad" name="ad" placeholder="Adınızı Girin" required>
+    <br><br>
+    Soyad:
+    <input type="text" id="soyad" name="soyad" placeholder="Soyadınızı Girin" required>
+    <br><br>
+    Yaş:
+    <input type="number" id="age" name="age" min="20" max="100">
+    <br><br>
+    Mail Adresi:
+    <input type="email" id="mail" name="mail">
+    <br><br>
+    Fotoğraf Ekle:
+    <input type="file" id="dosya" name="dosya">
+    <br><br>
+    Ürün Şifresi(6 haneli):
+    <input type="password" id="pass" name="pass" maxlength="6" required>
+</fieldset>
+      <fieldset>
+        <legend>Diğer Bilgiler</legend>
+        <h4>Buradaki Alanlar Mesleki Deneyimi Kapsar</h4>
+        Sektöre Giriş Tarihi:
+        <input type="date" id="tarih" name="tarih" value="2010-01-01" >
+        <br><br>
+        Sektör Deneyimi
+        <label><input type="radio" id="yil1" name="yil1" value="1">1-5 Yıl</input></label> <br>
+        <label><input type="radio" id="yil2" name="yil2" value="2">6-10 Yıl</input></label> <br>
+        <label><input type="radio" id="yil3" name="yil3" value="3">11-15 Yıl</input></label> <br>
+        <label><input type="radio" id="yil4" name="yil4" value="4">15 Yıl üzeri</input></label> <br>
+        Programlama Dilleri
+        <select class="form-select" multiple>
+        <option value="1">C#</option>
+        <option value="2">PHP</option>
+        <option value="3">JS</option>
+        <option value="4">Pyhton</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Sözleşme Kopyası</legend>
+        <textarea readonly cols="100" rows="5" id="sozlesme" name="sozlesme">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Mail Listesi </legend>
+            Mail listesine katılmak <b><u>istiyorum</u></b>
+            <input type="radio" id="mliste" name="mliste" checked><br>
+            Mail listesine katılmak <b><u>istemiyorum</u></b>
+            <input type="radio" id="mliste2" name="mliste3">
+      </fieldset>
+
+    </form>
+</body>
+</html>
